@@ -174,7 +174,10 @@ export default function Home() {
       </p>
 
       <footer className="foot">
-        self-hosted · your data stays in your own database
+        self-hosted · your data stays in your own database · made with love by{" "}
+        <a href="https://irtaza.xyz" target="_blank" rel="noreferrer">
+          Irtaza
+        </a>
       </footer>
     </div>
   );
