@@ -469,3 +469,9 @@ td {
     transform: scale(1.2);
   }
 }
+
+.muted-link {
+  font-size: 12px;
+  color: var(--text-mute);
+  text-decoration: underline;
+}
