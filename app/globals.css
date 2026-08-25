@@ -270,3 +270,67 @@ footer.foot {
   color: var(--text-mute);
   text-align: center;
 }
+
+.btn-danger {
+  background: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  font-size: 11px;
+  padding: 7px 12px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-item:hover {
+  border-color: var(--accent);
+}
+
+.link-item .label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.link-item .target {
+  font-size: 12px;
+  color: var(--text-mute);
+  max-width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clicks-pill {
+  font-size: 12px;
+  color: var(--dark);
+  background: var(--peach);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.empty {
+  color: var(--text-mute);
+  font-size: 13px;
+  padding: 40px 0;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
