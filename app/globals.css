@@ -166,3 +166,13 @@ input:focus {
   justify-content: center;
   padding: 24px;
 }
+
+.error {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 14px;
+  border: 1px solid var(--danger);
+  background: rgba(148, 123, 130, 0.08);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
