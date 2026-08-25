@@ -13,6 +13,29 @@ Each public link open is logged with a timestamp, coarse operating system,
 browser, device type, and referrer domain. No IP addresses, cookies, or
 fingerprinting are used for visitor analytics.
 
+## Demo
+
+Some screenshots of my deployed deeplinker!
+
+<table>
+  <tr>
+    <td align="center"><strong><i>New link</i></strong></td>
+    <td align="center"><strong><i>Public redirect page</i></strong></td>
+  </tr>
+  <tr>
+    <td><img src="public/demo/new-link.png" alt="New-link generator" width="300" /></td>
+    <td><img src="public/demo/redirect-page.png" alt="Public redirect page" width="300" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong><i>Dashboard</i></strong></td>
+    <td align="center"><strong><i>Link analytics</i></strong></td>
+  </tr>
+  <tr>
+    <td><img src="public/demo/dashboard.png" alt="Dashboard overview" width="300" /></td>
+    <td><img src="public/demo/link-analytics.png" alt="Link analytics" width="300" /></td>
+  </tr>
+</table>
+
 ## How redirects work
 
 - **Android:** deeplinker builds an `intent://` URL. Android in-app browsers
