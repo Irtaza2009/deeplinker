@@ -173,19 +173,6 @@ export default function Home() {
         to your dashboard.
       </p>
 
-      <footer className="foot">
-        <a
-          href="https://github.com/Irtaza2009/deeplinker"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open source
-        </a>{" "}
-        · self-hosted · your data stays in your own database · made with love by{" "}
-        <a href="https://irtaza.xyz" target="_blank" rel="noreferrer">
-          Irtaza
-        </a>
-      </footer>
     </div>
   );
 }

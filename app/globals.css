@@ -44,6 +44,8 @@ body {
     Consolas, monospace;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -160,7 +162,8 @@ input:focus {
 }
 
 .center-screen {
-  min-height: 100vh;
+  flex: 1;
+  min-height: calc(100vh - 42px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,14 +267,14 @@ input:focus {
   margin: 34px 0 14px;
 }
 
-footer.foot {
-  margin-top: 60px;
-  font-size: 11px;
+.site-footer {
+  padding: 16px 24px;
   color: var(--text-mute);
+  font-size: 11px;
   text-align: center;
 }
 
-footer.foot a {
+.site-footer a {
   color: var(--text-dim);
   text-underline-offset: 3px;
 }
