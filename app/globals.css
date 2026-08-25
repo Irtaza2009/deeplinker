@@ -1,26 +1,168 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --tangrey: #8e878c;
+  --neutralgrey: #9f94a0;
+  --lightgrey: #bbb8bb;
+  --pink: #dcb8b0;
+  --peach: #e5cab7;
+  --blue: #9bb0cd;
+  --lightblue: #cad5db;
+  --dark: #120f19;
+  --bold: #947b82;
+
+  --bg: var(--dark);
+  --surface: #1a1620;
+  --surface-2: #201b28;
+  --border: #322b3a;
+  --text: #ece8ee;
+  --text-dim: var(--lightgrey);
+  --text-mute: var(--tangrey);
+  --accent: var(--blue);
+  --accent-2: var(--peach);
+  --danger: var(--bold);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  background-image: radial-gradient(
+    circle at 15% 0%,
+    #1c1725 0%,
+    var(--dark) 55%
+  );
+  color: var(--text);
+  font-family:
+    "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo,
+    Consolas, monospace;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--blue);
+  color: var(--dark);
+}
+
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.sub {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin: 0 0 40px;
+  line-height: 1.6;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 8px;
+}
+
+.field .hint {
+  font-size: 11px;
+  color: var(--text-mute);
+  margin-top: 6px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="password"] {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+input:focus {
+  border-color: var(--accent);
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--dark);
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition:
+    transform 0.1s ease,
+    opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.center-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
